@@ -51,7 +51,7 @@ console.log(global.why2);
 console.log("checking stock price")
 if(global.why1 < global.whyb ){
     console.log("Stock price increased since start of code, selling")
-    axios.get(`https://spookvooper.com/api/Eco/SubmitStockSell?Ticker=${ticker}&count=1&price=0&accountid=511937a7-9510-4196-88af-f490d07e1b7c&auth=673c655a-6c12-4dd1-a902-e53daacc21fb`)
+    axios.get(`https://spookvooper.com/api/Eco/SubmitStockSell?Ticker=${ticker}&count=1&price=0&accountid=511937a7-9510-4196-88af-f490d07e1b7c&auth=`)
     .then((res) => {
         console.log(`Status: ${res.status}`);
         console.log('Body: ', res.data);
@@ -69,7 +69,7 @@ if(global.why1 < global.whyb ){
     if (why2 > 100) {
         console.log("bot has enough money to buy stonks, attempting too")
 
-        axios.get(`https://spookvooper.com/api/Eco/SubmitStockBuy?Ticker=${global.ticker}&count=1&price=0&accountid=511937a7-9510-4196-88af-f490d07e1b7c&auth=673c655a-6c12-4dd1-a902-e53daacc21fb`)
+        axios.get(`https://spookvooper.com/api/Eco/SubmitStockBuy?Ticker=${global.ticker}&count=1&price=0&accountid=`)
     .then((res) => {
         console.log(`Status: ${res.status}`);
         console.log('Body: ', res.data);
