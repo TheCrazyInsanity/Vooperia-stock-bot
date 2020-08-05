@@ -3,4 +3,5 @@ A stock bot for https://spookvooper.com/Exchange/Trade
 
 
 How to use:
-Yeah uhhhhhh. Its not user friendly yet. Figure it out or wait for 1.1 ok?
+change variable account id to your account id and auth to your account auth code.
+Then unprofit cuz the bot is still doo doo
